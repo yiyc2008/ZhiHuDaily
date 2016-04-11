@@ -4,4 +4,3 @@ use_frameworks!
 pod 'SwiftyJSON', '~> 2.3.2'
 pod 'Alamofire', '~> 3.3.0'
 pod 'SDWebImage', '~> 3.7.5'
-pod 'SVProgressHUD', '~> 2.0.2'
