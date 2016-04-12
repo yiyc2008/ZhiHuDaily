@@ -23,6 +23,12 @@
 		9B9F95F31CBAA29C0041FEF9 /* ZhiHuDailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F95F21CBAA29C0041FEF9 /* ZhiHuDailyUITests.swift */; };
 		9B9F96081CBAA3200041FEF9 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9F96061CBAA3200041FEF9 /* LaunchViewController.swift */; };
 		9B9F96091CBAA3200041FEF9 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9F96071CBAA3200041FEF9 /* LaunchViewController.xib */; };
+		9BD421321CBD499D00B3C853 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4212A1CBD499D00B3C853 /* MMDrawerBarButtonItem.m */; };
+		9BD421331CBD499D00B3C853 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4212D1CBD499D00B3C853 /* MMDrawerController.m */; };
+		9BD421341CBD499D00B3C853 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4212F1CBD499D00B3C853 /* MMDrawerVisualState.m */; };
+		9BD421351CBD499D00B3C853 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD421311CBD499D00B3C853 /* UIViewController+MMDrawerController.m */; };
+		9BD4213B1CBD4A7500B3C853 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4213A1CBD4A7500B3C853 /* MainViewController.swift */; };
+		9BD4213E1CBD4BED00B3C853 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD4213D1CBD4BED00B3C853 /* DrawerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,17 @@
 		9B9F96061CBAA3200041FEF9 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		9B9F96071CBAA3200041FEF9 /* LaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		9B9F960B1CBAA62A0041FEF9 /* ZhiHuDaily-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZhiHuDaily-Bridging-Header.h"; sourceTree = "<group>"; };
+		9BD421291CBD499D00B3C853 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		9BD4212A1CBD499D00B3C853 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		9BD4212B1CBD499D00B3C853 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		9BD4212C1CBD499D00B3C853 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		9BD4212D1CBD499D00B3C853 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		9BD4212E1CBD499D00B3C853 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		9BD4212F1CBD499D00B3C853 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		9BD421301CBD499D00B3C853 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		9BD421311CBD499D00B3C853 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		9BD4213A1CBD4A7500B3C853 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9BD4213D1CBD4BED00B3C853 /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		FB0AB2676819D8DDDC90E533 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +138,7 @@
 		9B314CD51CBBF2F90084C08E /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				9BD421281CBD499D00B3C853 /* MMDrawerController */,
 				9B314CD61CBBF3000084C08E /* SVProgressHUD */,
 			);
 			path = Lib;
@@ -207,6 +225,8 @@
 		9B9F96001CBAA2FD0041FEF9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				9BD4213C1CBD4BBB00B3C853 /* Drawer */,
+				9BD421361CBD49E500B3C853 /* Main */,
 				9B9F96011CBAA2FD0041FEF9 /* Launch */,
 				9B9F96051CBAA2FD0041FEF9 /* Other */,
 			);
@@ -255,6 +275,39 @@
 				9B9F960B1CBAA62A0041FEF9 /* ZhiHuDaily-Bridging-Header.h */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		9BD421281CBD499D00B3C853 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				9BD421291CBD499D00B3C853 /* MMDrawerBarButtonItem.h */,
+				9BD4212A1CBD499D00B3C853 /* MMDrawerBarButtonItem.m */,
+				9BD4212B1CBD499D00B3C853 /* MMDrawerController+Subclass.h */,
+				9BD4212C1CBD499D00B3C853 /* MMDrawerController.h */,
+				9BD4212D1CBD499D00B3C853 /* MMDrawerController.m */,
+				9BD4212E1CBD499D00B3C853 /* MMDrawerVisualState.h */,
+				9BD4212F1CBD499D00B3C853 /* MMDrawerVisualState.m */,
+				9BD421301CBD499D00B3C853 /* UIViewController+MMDrawerController.h */,
+				9BD421311CBD499D00B3C853 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		9BD421361CBD49E500B3C853 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9BD4213A1CBD4A7500B3C853 /* MainViewController.swift */,
+			);
+			name = Main;
+			path = Other/Main;
+			sourceTree = "<group>";
+		};
+		9BD4213C1CBD4BBB00B3C853 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				9BD4213D1CBD4BED00B3C853 /* DrawerViewController.swift */,
+			);
+			path = Drawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,10 +498,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B314CE51CBBF3000084C08E /* SVRadialGradientLayer.m in Sources */,
+				9BD4213B1CBD4A7500B3C853 /* MainViewController.swift in Sources */,
 				9B9F95D51CBAA29C0041FEF9 /* ViewController.swift in Sources */,
+				9BD421341CBD499D00B3C853 /* MMDrawerVisualState.m in Sources */,
+				9BD421351CBD499D00B3C853 /* UIViewController+MMDrawerController.m in Sources */,
+				9BD4213E1CBD4BED00B3C853 /* DrawerViewController.swift in Sources */,
 				9B314CE21CBBF3000084C08E /* SVProgressAnimatedView.m in Sources */,
 				9B314CE81CBBF8040084C08E /* Request+JSON.swift in Sources */,
+				9BD421321CBD499D00B3C853 /* MMDrawerBarButtonItem.m in Sources */,
 				9B9F96081CBAA3200041FEF9 /* LaunchViewController.swift in Sources */,
+				9BD421331CBD499D00B3C853 /* MMDrawerController.m in Sources */,
 				9B9F95D31CBAA29C0041FEF9 /* AppDelegate.swift in Sources */,
 				9B314CE11CBBF3000084C08E /* SVIndefiniteAnimatedView.m in Sources */,
 				9B314CE41CBBF3000084C08E /* SVProgressHUD.m in Sources */,
