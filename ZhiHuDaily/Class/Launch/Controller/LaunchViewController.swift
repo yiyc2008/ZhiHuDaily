@@ -51,9 +51,11 @@ class LaunchViewController: UIViewController {
                     
                     UIView.animateWithDuration(2.0, animations: {
                         self.backgroundView.alpha = 0.0
+                        self.titleLabel.alpha = 0.0
                         self.backgroundView.transform = CGAffineTransformMakeScale(1.2, 1.2)
                         }, completion: { (_) in
                             self.setupViewController()
+                            
                     })
                 })
             }
